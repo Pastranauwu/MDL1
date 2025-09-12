@@ -1,0 +1,117 @@
+=== https://www.iztapalapa.uam.mx/index.php/oferta-academica/licenciaturas#ciencias-basicas-e-ingenieria ===
+Divisiones: CBI
+1. Ciencias Atmosféricas
+   División: CBI
+   Plan:  https://www.uam.mx/licenciaturas/pdfs/174_1_Licenciatura_en_Ciencias_Atmosfericas_IZT.pdf
+   Sitio: https://cbi.izt.uam.mx/index.php/catm-desc
+2. Computación
+   División: CBI
+   Plan:  https://www.uam.mx/licenciaturas/pdfs/30_8a_Licenciatura_en_Computacion_IZT.pdf
+   Sitio: https://cbi.izt.uam.mx/index.php/compu-desc
+3. Física
+   División: CBI
+   Plan:  https://www.uam.mx/licenciaturas/pdfs/26_7b_Licenciatura_en_Fisica_IZT.pdf
+   Sitio: https://cbi.izt.uam.mx/index.php/fisica-desc
+4. Ingeniería Biomédica
+   División: CBI
+   Plan:  https://www.uam.mx/licenciaturas/pdfs/22_11_lic_en_ingenieria_biomedica_izt.pdf
+   Sitio: https://cbi.izt.uam.mx/index.php/biomedica-desc
+5. Ingeniería Electrónica
+   División: CBI
+   Plan:  https://www.uam.mx/licenciaturas/pdfs/27_10_Licenciatura_en_Ingenieria_Electronica_IZT.pdf
+   Sitio: https://cbi.izt.uam.mx/index.php/ie-desc
+6. Ingeniería en Energía
+   División: CBI
+   Plan:  https://www.uam.mx/licenciaturas/pdfs/25_8a_Licenciatura_en_Ingenieria_en_Energia_IZT.pdf
+   Sitio: https://cbi.izt.uam.mx/index.php/ene-desc
+7. Ingeniería Hidrológica
+   División: CBI
+   Plan:  https://www.uam.mx/licenciaturas/pdfs/23_9_Licenciatura_en_Ingenieria_Hidrologica_IZT.pdf
+   Sitio: https://cbi.izt.uam.mx/index.php/ih-desc
+8. Ingeniería Química
+   División: CBI
+   Plan:  https://www.uam.mx/licenciaturas/pdfs/24_11_Licenciatura-en-Ingenieria-Quimica-IZT.pdf
+   Sitio: https://cbi.izt.uam.mx/index.php/iq-desc
+9. Matemáticas
+   División: CBI
+   Plan:  https://www.uam.mx/licenciaturas/pdfs/28_10-Licenciatura_en_Matematicas_IZT_s516.pdf
+   Sitio: https://cbi.izt.uam.mx/index.php/mate-desc
+10. Química
+   División: CBI
+   Plan:  https://www.uam.mx/licenciaturas/pdfs/29_8_Licenciatura_en_Quimica_IZT.pdf
+   Sitio: https://cbi.izt.uam.mx/index.php/quim-desc
+
+=== https://www.iztapalapa.uam.mx/index.php/oferta-academica/licenciaturas#ciencias-biologicas-y-de-la-salud ===
+Divisiones: CBS
+1. Biología
+   División: CBS
+   Plan:  https://www.uam.mx/licenciaturas/pdfs/52_6_Licenciatura_en_Biologia_IZT.pdf
+   Sitio: https://cbs.izt.uam.mx/index.php/bio-desc
+2. Biología Experimental
+   División: CBS
+   Plan:  https://www.uam.mx/licenciaturas/pdfs/53_6a_Lic_en_Biologia_Experimental_IZT.pdf
+   Sitio: https://cbs.izt.uam.mx/index.php/biolexp-desc
+3. Hidrobiología
+   División: CBS
+   Plan:  https://www.uam.mx/licenciaturas/pdfs/54_5_Lic_Hidrobiologia_IZT.pdf
+   Sitio: https://cbs.izt.uam.mx/index.php/lichidro-desc
+4. Ingeniería de los Alimentos
+   División: CBS
+   Plan:  https://www.uam.mx/licenciaturas/pdfs/57_9_Licenciatura_en_Ingenieria_de_los_Alimentos_IZT.pdf
+   Sitio: https://cbs.izt.uam.mx/index.php/alim-desc
+5. Ingeniería Bioquímica Industrial
+   División: CBS
+   Plan:  https://www.uam.mx/licenciaturas/pdfs/56_8a_Lic_en_Ing_Bioquimica_Industrial_IZT.pdf
+   Sitio: https://cbs.izt.uam.mx/index.php/ingbq-desc
+6. Producción Animal
+   División: CBS
+   Plan:  https://www.uam.mx/licenciaturas/pdfs/55_5_Lic_Produccion_Animal_IZT.pdf
+   Sitio: https://cbs.izt.uam.mx/index.php/pa-desc
+
+=== https://www.iztapalapa.uam.mx/index.php/oferta-academica/licenciaturas#ciencias-sociales-y-humanidades ===
+Divisiones: CSH
+1. Administración
+   División: CSH
+   Plan:  https://www.uam.mx/licenciaturas/pdfs/37_7_Lic_en_Administracion_IZT.pdf
+   Sitio: https://divcsh.izt.uam.mx/depto_economia/?page_id=6601
+2. Antropología Social
+   División: CSH
+   Plan:  https://www.uam.mx/licenciaturas/pdfs/38_7_Lic_en_Antropologia_Social_IZT.pdf
+   Sitio: https://divcsh.izt.uam.mx/depto_antropologia/?page_id=7
+3. Ciencia Política
+   División: CSH
+   Plan:  https://www.uam.mx/licenciaturas/pdfs/45_10_Licenciatura_en_Ciencia_PolItica_IZT.pdf
+   Sitio: https://divcsh.izt.uam.mx/depto_sociologia/index.php/docencia/
+4. Economía
+   División: CSH
+   Plan:  https://www.uam.mx/licenciaturas/pdfs/41_6_Economia.pdf
+   Sitio: https://divcsh.izt.uam.mx/depto_economia/?page_id=6593
+5. Filosofía
+   División: CSH
+   Plan:  https://www.uam.mx/licenciaturas/pdfs/40_7_Licenciatura_en_Filosofia_IZT.pdf
+   Sitio: https://divcsh.izt.uam.mx/depto_filosofia/
+6. Geografía Humana
+   División: CSH
+   Plan:  https://www.uam.mx/licenciaturas/pdfs/121_3_Licenciatura_en_Geografia_Humana_IZT.pdf
+   Sitio: http://dcsh.izt.uam.mx/licenciaturas/geografiahumana/
+7. Historia
+   División: CSH
+   Plan:  https://www.uam.mx/licenciaturas/pdfs/43_5_Lic_en_Historia_IZT.pdf
+   Sitio: https://divcsh.izt.uam.mx/depto_filosofia/
+8. Letras Hispánicas
+   División: CSH
+   Plan:  https://www.uam.mx/licenciaturas/pdfs/39_6_Letras_Hisp.pdf
+   Sitio: http://dcsh.izt.uam.mx/licenciaturas/letras_hispanicas/
+9. Lingüistica
+   División: CSH
+   Plan:  https://www.uam.mx/licenciaturas/pdfs/44_5_Linguistica.pdf
+   Sitio: https://divcsh.izt.uam.mx/linguistica/
+10. Psicología Social
+   División: CSH
+   Plan:  https://www.uam.mx/licenciaturas/pdfs/46_6_Licenciatura_en_Psicologia_Social_IZT.pdf
+   Sitio: https://psicologiasocial.izt.uam.mx/
+11. Sociología
+   División: CSH
+   Plan:  https://www.uam.mx/licenciaturas/pdfs/42_9_Lic_en_Sociologia.pdf
+   Sitio: https://divcsh.izt.uam.mx/depto_sociologia/index.php/docencia/
+
