@@ -6,6 +6,7 @@ WORKDIR /app
 
 # Copiamos el archivo de requerimientos e instalamos las dependencias
 COPY requirements.txt .
+
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copiamos el resto de los archivos de la aplicación
