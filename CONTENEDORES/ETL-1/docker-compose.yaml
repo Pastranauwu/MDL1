@@ -1,0 +1,18 @@
+
+services:
+  # Servicio de ETL que vigila la carpeta de entrada
+  etl_processor:
+    build: .
+    container_name: etl_processor
+    volumes:
+      # Carpeta donde depositas los TXT para ser procesados
+      - ./input_data:/app/input_data
+      # Carpeta donde se guardarán los resultados (JSON)
+      - ./output_data:/app/output_data
+    environment:
+      # Conectamos al localhost del host. Requiere network_mode: host
+      - OLLAMA_HOST=http://localhost:11434/api/generate
+      # La pregunta clave para validar el contenido
+      - SYSTEM_PROMPT_QUESTION="¿El siguiente texto contiene información sobre los requisitos para realizar el servicio social en la UAM?"
+    # Permite que el contenedor acceda a los servicios del host (como Ollama en localhost)
+    network_mode: host

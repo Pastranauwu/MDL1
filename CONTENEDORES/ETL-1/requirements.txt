@@ -1,0 +1,3 @@
+# Instala las dependencias de Python
+requests
+watchdog
