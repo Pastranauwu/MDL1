@@ -17,7 +17,7 @@ OUTPUT_DIR = "/app/output_data"
 
 # Configuración de Ollama (desde variables de entorno)
 OLLAMA_HOST = os.getenv("OLLAMA_HOST", "http://localhost:11434/api/generate")
-OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "gemma3:270m")
+OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "llama3.2:3b")
 SYSTEM_PROMPT_QUESTION = os.getenv("SYSTEM_PROMPT_QUESTION", "¿El texto contiene información relevante?")
 
 # --- Lógica del Procesador ETL ---
