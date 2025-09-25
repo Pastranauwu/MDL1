@@ -16,9 +16,14 @@ INPUT_DIR = "/app/input_data"
 OUTPUT_DIR = "/app/output_data"
 
 # Configuración de Ollama (desde variables de entorno)
-OLLAMA_HOST = os.getenv("OLLAMA_HOST", "http://localhost:11434/api/generate")
+OLLAMA_HOST = os.getenv("OLLAMA_HOST", "http://127.0.0.1:11434/api/generate")
 OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "llama3.2:3b")
-SYSTEM_PROMPT_QUESTION = os.getenv("SYSTEM_PROMPT_QUESTION", "¿El texto contiene información relevante?")
+SYSTEM_PROMPT_QUESTION = "¿El siguiente texto contiene información sobre "
+
+# Contador global para generar nombres de archivos únicos
+i = 0
+
+lista = ["Actividades deportivas", "Congresos", "Grupos Estudiantiles", "Idioma", "Licenciatura", "Movilidad", "Prorroga", "Servicio Social", "Telefonos UAM", "Titulacion"]
 
 # --- Lógica del Procesador ETL ---
 
@@ -44,10 +49,11 @@ def query_ollama(text_content, question):
                 "prompt": full_prompt,
                 "stream": False, # Esperamos la respuesta completa
                 "options": {
-                    "temperature": 0.0 # Para respuestas deterministas (Sí/No)
+                    "temperature": 0.0, # Para respuestas deterministas (Sí/No)
+                    "max_tokens": 50,
+                    "top_p": 1.0
                 }
-            },
-            timeout=120 # Timeout de 60 segundos
+            }
         )
         response.raise_for_status()
         
@@ -72,9 +78,9 @@ def process_file(filepath):
     """
     Procesa un único archivo de texto: lo lee, consulta a Ollama y guarda el resultado.
     """
+    global i
     filename = os.path.basename(filepath)
     logging.info(f"Nuevo archivo detectado: {filename}")
-
     # 1. Leer el contenido del archivo
     try:
         with open(filepath, 'r', encoding='utf-8') as f:
@@ -94,12 +100,13 @@ def process_file(filepath):
     output_data = {
         "source_file": filename,
         "question": SYSTEM_PROMPT_QUESTION,
-        "is_relevant": answer,
-        "original_content": content
+        "is_relevant": answer
     }
     
-    output_filename = f"{os.path.splitext(filename)[0]}.json"
+    output_filename = f"{os.path.splitext(filename)[0]}{i}.json"
     output_filepath = os.path.join(OUTPUT_DIR, output_filename)
+    
+    i += 1
     
     try:
         with open(output_filepath, 'w', encoding='utf-8') as f:
@@ -123,15 +130,20 @@ class TxtFileHandler(FileSystemEventHandler):
     def on_created(self, event):
         if not event.is_directory and event.src_path.endswith('.txt'):
             # Esperar un poco para asegurar que el archivo se haya escrito completamente
-            time.sleep(1)
-            process_file(event.src_path)
+            time.sleep(5)
+            for item in lista:
+                global SYSTEM_PROMPT_QUESTION
+                SYSTEM_PROMPT_QUESTION = "¿El siguiente texto contiene información sobre los requisitos para realizar " + item + " en la UAM?"
+                process_file(event.src_path)
+                time.sleep(2)  # Pequeña pausa entre procesamientos
+                
 
 if __name__ == "__main__":
     # Asegurarse de que los directorios de entrada y salida existan
     logging.info("Verificando directorios...")
     os.makedirs(INPUT_DIR, exist_ok=True)
     os.makedirs(OUTPUT_DIR, exist_ok=True)
-
+    i = 0
     logging.info("Iniciando servicio de ETL...")
     logging.info(f"Monitoreando la carpeta: {INPUT_DIR}")
     logging.info(f"Los resultados se guardarán en: {OUTPUT_DIR}")
